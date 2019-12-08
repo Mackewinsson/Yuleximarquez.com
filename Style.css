@@ -1,0 +1,87 @@
+/* Grid layout */
+
+.grid{
+
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: minmax(100px, min-content) minmax(100px, min-content) auto min-content;
+    grid-gap: 10px;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    ". main ."
+    "footer footer footer"
+    ;
+}
+
+header{
+
+    grid-area: header;
+
+}
+
+nav{
+
+    grid-area: nav;
+    
+}
+
+main{
+
+    grid-area: main;
+}
+
+footer{
+
+    grid-area: footer;
+
+}
+
+/* End of grid declaration */
+
+/* Look of container elements */
+
+header{
+
+    background-color: lightseagreen;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+nav{
+
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+main{
+
+    background-color: lightslategray;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+footer{
+
+    background-color: lightpink;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
