@@ -4,6 +4,11 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    font-family: 'Lobster', cursive;
+}
+
+a{
+    color: #fff;
 }
 
 /* Grid layout */
@@ -13,7 +18,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 100px 50px minmax(150px, auto) 100px;
+    grid-auto-rows: auto 50px minmax(150px, auto) 100px;
     grid-template-areas:
     "header"
     "nav"
@@ -25,7 +30,15 @@
 header{
 
     grid-area: header;
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+}
 
+.portada{
+    max-width: 100%;
+    height: 500px;
+    margin-top: auto;
 }
 
 nav{
@@ -42,7 +55,7 @@ nav{
     grid-gap: 30px;
     justify-content: center;
     align-content: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #fff;
     padding: 0px;
     margin: 0px;
@@ -68,7 +81,7 @@ footer{
     .grid{
 
         grid-template-columns: 100px 2fr 100px;
-        grid-template-rows: 100px 100px minmax(150px, auto) 100px;
+        grid-template-rows: 1fr 100px minmax(150px, auto) 100px;
         grid-template-areas: 
         "header header header"
         "nav nav nav"
@@ -83,12 +96,9 @@ footer{
 
 header{
 
-    background-color: lightseagreen;
-    padding: 10px;
-    color: #fff;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    background-color: #ADA895;
+    margin-bottom: -10px;
+ 
 }
 
 nav{
